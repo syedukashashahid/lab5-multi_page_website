@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education — Syed Ukasha Shahid</title>
+  <meta name="description" content="Education of Syed Ukasha Shahid: BS Computer Science at Qarshi University, Intermediate and Matriculation.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23191919'/%3E%3Ctext x='29' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='46' y='46' width='9' height='9' rx='2' fill='%23FF9F0A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Marks that JavaScript is available (lets the mobile menu collapse and
+       the animations run). If script.js ever fails to load, the timer makes
+       sure no animated content stays hidden. -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains("motion-ready")) {
+        document.documentElement.classList.add("motion-fallback");
+      }
+    }, 2500);
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Ukasha Shahid, home">
+        <span class="monogram" aria-hidden="true">US</span>
+        <span class="brand-name">UKASHA SHAHID</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html" aria-current="page">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <!-- Decorative shapes; drift slightly on scroll -->
+      <div class="intro-deco" aria-hidden="true" data-parallax="-0.15">
+        <span class="deco-ring"></span>
+        <span class="deco-dots"></span>
+      </div>
+      <div class="container">
+        <h1 data-enter="title">Education.</h1>
+        <p class="lede" data-enter>My academic path so far, from matriculation to my current computer science degree.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <ol class="timeline" data-reveal="line" data-stagger>
+
+          <!-- Current degree (highlighted) -->
+          <li class="tl-item current" data-reveal="left">
+            <p class="tl-year">2028<small>expected</small></p>
+            <article class="tl-card">
+              <span class="tl-status">Current degree</span>
+              <h2>BS Computer Science</h2>
+              <p class="tl-school">Qarshi University, Lahore, Pakistan</p>
+              <ul class="tl-facts">
+                <li><span>Current semester:</span> 5th</li>
+                <li><span>Expected graduation:</span> 2028</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Intermediate -->
+          <li class="tl-item" data-reveal="left">
+            <p class="tl-year">2024<small>completed</small></p>
+            <article class="tl-card">
+              <span class="tl-status">Intermediate</span>
+              <h2>Intermediate — ICS / Pre-Engineering</h2>
+              <p class="tl-school">Punjab Group of Colleges</p>
+              <ul class="tl-facts">
+                <li><span>Completed:</span> 2024</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Matriculation -->
+          <li class="tl-item" data-reveal="left">
+            <p class="tl-year">2022<small>completed</small></p>
+            <article class="tl-card">
+              <span class="tl-status">Matriculation</span>
+              <h2>Matriculation</h2>
+              <p class="tl-school">Nishat Boys High School</p>
+              <ul class="tl-facts">
+                <li><span>Completed:</span> 2022</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="monogram" aria-hidden="true">US</span>
+        <p class="footer-copy"><strong>© 2026 Syed Ukasha Shahid</strong>BS Computer Science · Qarshi University</p>
+      </div>
+      <span class="footer-place">Lahore, Pakistan</span>
+    </div>
+  </footer>
+</body>
+</html>
