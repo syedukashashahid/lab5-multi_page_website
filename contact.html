@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Syed Ukasha Shahid</title>
+  <meta name="description" content="Contact Syed Ukasha Shahid about internships and entry-level software development roles.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23191919'/%3E%3Ctext x='29' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='46' y='46' width='9' height='9' rx='2' fill='%23FF9F0A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Marks that JavaScript is available (lets the mobile menu collapse and
+       the animations run). If script.js ever fails to load, the timer makes
+       sure no animated content stays hidden. -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains("motion-ready")) {
+        document.documentElement.classList.add("motion-fallback");
+      }
+    }, 2500);
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Ukasha Shahid, home">
+        <span class="monogram" aria-hidden="true">US</span>
+        <span class="brand-name">UKASHA SHAHID</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <!-- Decorative shapes; drift slightly on scroll -->
+      <div class="intro-deco" aria-hidden="true" data-parallax="-0.15">
+        <span class="deco-ring"></span>
+        <span class="deco-dots"></span>
+      </div>
+      <div class="container">
+        <h1 data-enter="title">Let's build something meaningful.</h1>
+        <p class="lede" data-enter>
+          I'm interested in internship opportunities, entry-level software development roles,
+          and opportunities to learn through practical projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid" data-stagger>
+
+        <!-- Contact details -->
+        <aside class="contact-card" aria-label="Contact details" data-reveal="depth">
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:syedukashashahid@gmail.com">
+                <span class="c-icon" aria-hidden="true">@</span>
+                <span><small>Email</small><strong>syedukashashahid<wbr>@gmail.com</strong></span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+923095236098">
+                <span class="c-icon" aria-hidden="true">#</span>
+                <span><small>Phone</small><strong>+92 309 5236098</strong></span>
+              </a>
+            </li>
+            <li>
+              <div class="contact-static">
+                <span class="c-icon" aria-hidden="true">&#9679;</span>
+                <span><small>Location</small><strong>Lahore, Pakistan</strong></span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:syedukashashahid@gmail.com">Send an Email</a>
+            <a class="btn btn-ghost-light" href="tel:+923095236098">Call Me</a>
+            <!-- CV DOWNLOAD: place your PDF at assets/Syed_Ukasha_Shahid_CV.pdf
+                 (same folder name and file name) for this button to work. -->
+            <a class="btn btn-ghost-light" href="assets/Syed_Ukasha_Shahid_CV.pdf" download>
+              <span class="icon-download" aria-hidden="true"></span>
+              Download CV
+            </a>
+          </div>
+
+          <!-- SOCIAL LINKS: remove the comment markers and paste your real URLs
+               when you have them.
+          <div class="social-links">
+            <a class="btn btn-ghost-light" href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a>
+            <a class="btn btn-ghost-light" href="https://github.com/YOUR-USERNAME">GitHub</a>
+          </div>
+          -->
+        </aside>
+
+        <!-- Contact form -->
+        <section class="form-card" aria-labelledby="form-title" data-reveal="depth">
+          <h2 id="form-title">Write a message</h2>
+          <p>This form opens your email app with your message filled in, ready to send.</p>
+
+          <form id="contact-form" action="mailto:syedukashashahid@gmail.com" method="post" enctype="text/plain" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="email">Your email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+              <div class="field full">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" required aria-describedby="subject-error">
+                <span class="field-error" id="subject-error" aria-live="polite"></span>
+              </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-foot">
+              <p class="form-hint">Nothing is sent from this page. You'll review and send the email yourself.</p>
+              <button class="btn btn-dark" type="submit">Open in email app</button>
+            </div>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="monogram" aria-hidden="true">US</span>
+        <p class="footer-copy"><strong>© 2026 Syed Ukasha Shahid</strong>BS Computer Science · Qarshi University</p>
+      </div>
+      <span class="footer-place">Lahore, Pakistan</span>
+    </div>
+  </footer>
+</body>
+</html>
