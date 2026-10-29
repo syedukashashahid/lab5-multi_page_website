@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Syed Ukasha Shahid</title>
+  <meta name="description" content="Academic projects by Syed Ukasha Shahid: Bus Management System and Shineo maid finder website.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23191919'/%3E%3Ctext x='29' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='46' y='46' width='9' height='9' rx='2' fill='%23FF9F0A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Marks that JavaScript is available (lets the mobile menu collapse and
+       the animations run). If script.js ever fails to load, the timer makes
+       sure no animated content stays hidden. -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains("motion-ready")) {
+        document.documentElement.classList.add("motion-fallback");
+      }
+    }, 2500);
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Ukasha Shahid, home">
+        <span class="monogram" aria-hidden="true">US</span>
+        <span class="brand-name">UKASHA SHAHID</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <!-- Decorative shapes; drift slightly on scroll -->
+      <div class="intro-deco" aria-hidden="true" data-parallax="-0.15">
+        <span class="deco-ring"></span>
+        <span class="deco-dots"></span>
+      </div>
+      <div class="container">
+        <h1 data-enter="title">Projects.</h1>
+        <p class="lede" data-enter>Two academic projects: a Java desktop application and a website built with HTML and CSS.</p>
+      </div>
+    </section>
+
+    <section class="section flush-top">
+      <div class="container">
+
+        <!-- ===== Project 01: Bus Management System ===== -->
+        <article class="project" aria-labelledby="p1-title" data-reveal="lift">
+          <!-- data-tilt: the card tilts gently toward the pointer on desktop -->
+          <div class="project-card" data-tilt>
+          <div class="project-info">
+            <span class="project-num" aria-hidden="true">01</span>
+            <span class="project-type">Academic project · Desktop application</span>
+            <h2 id="p1-title">Bus Management System</h2>
+            <p class="project-desc">
+              A desktop application designed to support bus management operations, including route
+              scheduling, ticket booking, digital passes, bus allocation, staff management, and
+              feedback management.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li class="tag">Java</li>
+              <li class="tag">Java Swing</li>
+              <li class="tag">OOP</li>
+              <li class="tag">NetBeans</li>
+            </ul>
+            <!-- Add a link here later if you publish the code, for example:
+                 <p style="margin-top:1.5rem"><a class="text-link" href="YOUR-GITHUB-URL">View the code</a></p> -->
+          </div>
+
+          <figure class="preview">
+            <!-- Conceptual interface drawn with HTML and CSS (not a screenshot) -->
+            <div class="window bms" aria-hidden="true" data-parallax="0.05">
+              <div class="window-bar"><i></i><i></i><i></i><span>Bus Management System</span></div>
+              <div class="bms-body">
+                <div class="bms-side">
+                  <b class="on">Routes</b>
+                  <b>Tickets</b>
+                  <b>Passes</b>
+                  <b>Buses</b>
+                  <b>Staff</b>
+                  <b>Feedback</b>
+                </div>
+                <div class="bms-main">
+                  <div class="bms-stats">
+                    <div class="bms-stat"><small>Routes</small><div class="bar" style="--w: 72%"></div></div>
+                    <div class="bms-stat"><small>Buses</small><div class="bar" style="--w: 55%"></div></div>
+                    <div class="bms-stat"><small>Passes</small><div class="bar" style="--w: 84%"></div></div>
+                  </div>
+                  <div class="bms-route">
+                    <small>Route schedule</small>
+                    <div class="route-line"><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i></div>
+                  </div>
+                  <div class="bms-row">
+                    <div class="ticket"><small>Ticket booking</small><strong>Seat reserved</strong></div>
+                    <div class="alloc">
+                      <span>Bus allocation <em>On</em></span>
+                      <span>Staff on duty <em>On</em></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption class="preview-caption">Conceptual preview drawn in CSS, not a screenshot.</figcaption>
+          </figure>
+          </div>
+        </article>
+
+        <!-- ===== Project 02: Shineo ===== -->
+        <article class="project reverse" aria-labelledby="p2-title" data-reveal="lift">
+          <div class="project-card" data-tilt>
+          <div class="project-info">
+            <span class="project-num" aria-hidden="true">02</span>
+            <span class="project-type">Academic project · Website</span>
+            <h2 id="p2-title">Shineo — Maid Finder Website</h2>
+            <p class="project-desc">
+              A website concept that connects users with nearby domestic service providers, helping
+              users explore and find suitable household services.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+            </ul>
+            <!-- Add a live demo link here later, for example:
+                 <p style="margin-top:1.5rem"><a class="text-link" href="YOUR-DEMO-URL">Visit the site</a></p> -->
+          </div>
+
+          <figure class="preview">
+            <!-- Conceptual interface drawn with HTML and CSS (not a screenshot) -->
+            <div class="window shineo" aria-hidden="true" data-parallax="0.09">
+              <div class="window-bar"><i></i><i></i><i></i><span class="url-pill">shineo</span></div>
+              <div class="shineo-nav">
+                <span class="shineo-logo">Shineo</span>
+                <nav><span>Services</span><span>How it works</span><span>Contact</span></nav>
+              </div>
+              <div class="shineo-hero">
+                <strong>Find household help near you</strong>
+                <div class="shineo-search"><span>Enter your area</span><b>Search</b></div>
+              </div>
+              <div class="shineo-cards">
+                <div class="svc"><div class="ava"></div><b>House cleaning</b><small>Service provider</small><span class="pill">Nearby</span></div>
+                <div class="svc"><div class="ava"></div><b>Cooking</b><small>Service provider</small><span class="pill">Nearby</span></div>
+                <div class="svc"><div class="ava"></div><b>Laundry</b><small>Service provider</small><span class="pill">Nearby</span></div>
+              </div>
+            </div>
+            <figcaption class="preview-caption">Conceptual preview drawn in CSS, not a screenshot.</figcaption>
+          </figure>
+          </div>
+        </article>
+
+        <p class="projects-note" data-reveal>
+          Both are academic projects completed during my degree. Code and live demo links will be added here when they are published.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="monogram" aria-hidden="true">US</span>
+        <p class="footer-copy"><strong>© 2026 Syed Ukasha Shahid</strong>BS Computer Science · Qarshi University</p>
+      </div>
+      <span class="footer-place">Lahore, Pakistan</span>
+    </div>
+  </footer>
+</body>
+</html>
