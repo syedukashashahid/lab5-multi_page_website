@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syed Ukasha Shahid — Computer Science Student</title>
+  <meta name="description" content="Portfolio of Syed Ukasha Shahid, BS Computer Science student at Qarshi University, Lahore.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23191919'/%3E%3Ctext x='29' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='46' y='46' width='9' height='9' rx='2' fill='%23FF9F0A'/%3E%3C/svg%3E">
+
+  <!-- Font: Bricolage Grotesque from Google Fonts.
+       If you are offline, the site falls back to your system font automatically. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Marks that JavaScript is available (lets the mobile menu collapse and
+       the animations run). If script.js ever fails to load, the timer makes
+       sure no animated content stays hidden. -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains("motion-ready")) {
+        document.documentElement.classList.add("motion-fallback");
+      }
+    }, 2500);
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Ukasha Shahid, home">
+        <span class="monogram" aria-hidden="true">US</span>
+        <span class="brand-name">UKASHA SHAHID</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title" data-pointer-stage>
+      <!-- Background grid; moves slightly slower than the page when scrolling -->
+      <div class="hero-bg" aria-hidden="true" data-parallax="0.12"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker" data-enter>COMPUTER SCIENCE STUDENT · ASPIRING SOFTWARE DEVELOPER</p>
+          <h1 id="hero-title" data-enter="title">Building practical ideas into digital experiences.</h1>
+          <p class="hero-intro" data-enter>
+            I'm Syed Ukasha Shahid, a BS Computer Science student at Qarshi University, Lahore.
+            I enjoy exploring software development, programming, and web technologies while
+            building practical projects that strengthen my technical skills.
+          </p>
+
+          <div class="hero-actions" data-enter>
+            <a class="btn btn-primary" href="projects.html">Explore My Projects</a>
+            <!-- CV DOWNLOAD: place your PDF at assets/Syed_Ukasha_Shahid_CV.pdf
+                 (same folder name and file name) for this button to work. -->
+            <a class="btn btn-ghost-light" href="assets/Syed_Ukasha_Shahid_CV.pdf" download>
+              <span class="icon-download" aria-hidden="true"></span>
+              View My CV
+            </a>
+            <a class="btn btn-ghost-light" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="portrait-stage">
+          <!-- Decorative shapes behind the portrait.
+               The wrapper drifts on scroll; each shape drifts with the pointer
+               by a different amount (--depth) to create layers. -->
+          <div class="hero-shapes" aria-hidden="true" data-parallax="-0.08">
+            <span class="shape shape-ring" style="--depth: 0.9"></span>
+            <span class="shape shape-square" style="--depth: 0.5"></span>
+            <span class="shape shape-dots" style="--depth: 1.3"></span>
+            <span class="shape shape-bar" style="--depth: 0.7"></span>
+          </div>
+
+          <figure class="portrait" data-enter="portrait">
+            <!-- PROFILE PHOTO: replace assets/profile.jpg to change the picture.
+                 A 4:5 portrait (for example 1200 x 1500 px) fits this frame best. -->
+            <div class="portrait-layer">
+              <div class="portrait-float">
+                <div class="portrait-frame" data-photo-frame>
+                  <img src="assets/profile.jpg"
+                       alt="Portrait of Syed Ukasha Shahid in a dark suit, seated against a dark studio background"
+                       width="1246" height="1558">
+                  <span class="portrait-placeholder" aria-hidden="true">US</span>
+                </div>
+                <span class="portrait-badge">BSCS · CLASS OF 2028</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Interests ===== -->
+    <section class="section" aria-labelledby="interests-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="interests-title" data-reveal="heading"><span class="tick" aria-hidden="true"></span>What I work on</h2>
+          <p data-reveal>Three areas I'm building my skills in during my degree.</p>
+        </div>
+
+        <div class="interests" data-stagger>
+          <article class="interest" data-reveal="depth">
+            <span class="interest-glyph" aria-hidden="true">{ }</span>
+            <h3>Programming</h3>
+            <p>Writing programs in C, C++, Java and Python, with a focus on object-oriented design and data structures.</p>
+          </article>
+          <article class="interest" data-reveal="depth">
+            <span class="interest-glyph" aria-hidden="true">&lt;/&gt;</span>
+            <h3>Web development</h3>
+            <p>Building clean, easy-to-use pages with HTML and CSS, like my Shineo website concept.</p>
+          </article>
+          <article class="interest" data-reveal="depth">
+            <span class="interest-glyph" aria-hidden="true">&gt;_</span>
+            <h3>Practical projects</h3>
+            <p>Turning coursework into working software, such as a Java Swing desktop app for bus management.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Links to the other pages ===== -->
+    <section class="section flush-top" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="explore-title" data-reveal="heading"><span class="tick" aria-hidden="true"></span>Explore the rest</h2>
+        </div>
+        <div class="explore" data-stagger>
+          <a href="about.html" data-reveal="depth"><strong>About me</strong><span>Background and goals</span><i class="go" aria-hidden="true"></i></a>
+          <a href="skills.html" data-reveal="depth"><strong>Skills</strong><span>Languages, tools and concepts</span><i class="go" aria-hidden="true"></i></a>
+          <a href="projects.html" data-reveal="depth"><strong>Projects</strong><span>Two academic projects</span><i class="go" aria-hidden="true"></i></a>
+          <a href="education.html" data-reveal="depth"><strong>Education</strong><span>From matric to BSCS</span><i class="go" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="monogram" aria-hidden="true">US</span>
+        <p class="footer-copy"><strong>© 2026 Syed Ukasha Shahid</strong>BS Computer Science · Qarshi University</p>
+      </div>
+      <span class="footer-place">Lahore, Pakistan</span>
+    </div>
+  </footer>
+</body>
+</html>
